@@ -15,6 +15,13 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content" />
 
+    <Switch
+        android:id="@+id/sandbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/sandbox"
+        android:visibility="gone"/>
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -32,11 +39,30 @@
 
     </LinearLayout>
 
-    <ListView
-        android:id="@+id/vehicle_list"
+    <FrameLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="1"></ListView>
+        android:layout_weight="1">
+
+        <ProgressBar
+            android:id="@+id/progress"
+            android:layout_gravity="center"
+            android:visibility="gone"
+            style="@style/AppTheme.ProgressBar"/>
+
+        <TextView
+            android:id="@+id/txt_no_vehicles"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:visibility="gone"
+            android:text="@string/txt_no_vehicles"/>
+
+        <ListView
+            android:id="@+id/vehicle_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </FrameLayout>
 
     <fragment
         android:id="@+id/map_fragment"

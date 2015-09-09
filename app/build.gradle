@@ -36,5 +36,5 @@ dependencies {
     compile 'joda-time:joda-time:2.5'
     compile files('libs/signalr-client-sdk.jar')
     compile files('libs/signalr-client-sdk-android.jar')
-    compile 'io.moj.mobile.android.sdk:mojiosdksrc-release:1.0.1@aar'
+    compile 'io.moj.mobile.android.sdk:mojiosdksrc-release:1.0.3@aar'
 }

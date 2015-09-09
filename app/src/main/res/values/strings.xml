@@ -1,4 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">Mojio Map Example</string>
+
+    <string name="sandbox">Sandbox</string>
+
+    <string name="login_success">Logged in successfully</string>
+
+    <string name="txt_no_vehicles">No vehicles found</string>
+
+    <!-- ERRORS -->
+    <string name="error_login">Problem logging in</string>
+    <string name="error_set_sandbox">Problem setting sandbox state</string>
+    <string name="error_get_current_user">Problem getting current user</string>
 </resources>
